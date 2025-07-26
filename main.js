@@ -1,11 +1,9 @@
 import express from 'express'
-
+import router from './routs/movies.route.js'
 const app = express();
 const PORT = 6969;
 
-app.get('/',(req,res)=>{
-        res.json({msg :'Hello Msg'})
-})
+app.use('/movies',router)
 
 app.listen(PORT,()=>{
     try {

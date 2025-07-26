@@ -12,3 +12,7 @@
 1.SQL - mysql, MariaDB, postgreSQL.
 
 2.noSQL - mongoDB
+
+### Deployed on render
+
+Use this URL to use our API `https://must-api.onrender.com` 

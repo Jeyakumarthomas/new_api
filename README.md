@@ -12,5 +12,3 @@
 1.SQL - mysql, MariaDB, postgreSQL.
 
 2.noSQL - mongoDB
-
-mongodb+srv://jeyakumarthomas23123:q1cTcCLxL1AwGUrd@cluster0.jlc7s85.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

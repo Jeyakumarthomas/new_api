@@ -1,12 +1,18 @@
 import express from 'express'
 import router from './routs/movies.route.js'
 import connectDB from './libs/db.js';
+import bodyParser from 'body-parser';
 
 const app = express();
 const PORT = 6969;
 connectDB();
 
-app.use('/movies',router)
+
+app.use(bodyParser.json());
+app.use('/movies',router);
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 
 app.listen(PORT,()=>{
     try {

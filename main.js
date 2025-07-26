@@ -1,7 +1,10 @@
 import express from 'express'
 import router from './routs/movies.route.js'
+import connectDB from './libs/db.js';
+
 const app = express();
 const PORT = 6969;
+connectDB();
 
 app.use('/movies',router)
 
